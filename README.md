@@ -4,6 +4,7 @@
  <p>
 
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a8c657fc-8eb7-4aa9-b56b-37219cb7bbf8/deploy-status)](https://app.netlify.com/sites/eventica/deploys)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
 ![Visitors](https://api.visitorbadge.io/api/visitors?path=Rakesh9100%2FEventica%20&countColor=%23263759&style=flat)
 ![GitHub forks](https://img.shields.io/github/forks/Rakesh9100/Eventica)
