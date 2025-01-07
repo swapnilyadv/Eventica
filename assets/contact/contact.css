@@ -134,6 +134,16 @@ textarea {
     color: #4a90e2;
 }
 
+#error {
+    color: #e74c3c;
+    font-size: 21px;
+}
+
+#success {
+    color: #4a90e2;
+    font-size: 21px;
+}
+
 /* Footer Css*/
 
 footer {
