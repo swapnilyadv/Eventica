@@ -140,16 +140,17 @@ body {
 }
 
 .search-button {
-    background-color: #007bff;
+    background-color: var(--primary-color);
     color: white;
     border: none;
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .search-button:hover {
-    background-color: #0056b3; /* Darker shade for hover effect */
+    background-color: #686969;
 }
 
 /* Theme Switcher Css */
@@ -177,7 +178,7 @@ body {
 }
 
 #theme-toggle:hover {
-    background-color: var(--secondary-color);
+    background-color: #686969;
 }
 
 #theme-toggle svg {
@@ -575,7 +576,7 @@ body.dark-mode .navbar {
 }
 
 #dark-mode-toggle:hover {
-    background-color: var(--secondary-color);
+    background-color: #686969;
 }
 
 #dark-mode-toggle i {
