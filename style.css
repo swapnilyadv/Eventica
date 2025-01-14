@@ -559,7 +559,7 @@ body.dark-mode .navbar {
     background-color: rgba(24, 24, 24, 0.9);
 }
 
-body.dark-mode .fa-bars{
+body.dark-mode .fa-bars {
     color: white;
 }
 
@@ -656,7 +656,6 @@ body.dark-mode .event-date,
     body.dark-mode .nav-links a {
         color: #2a2a2a;
     }
-    
 }
 
 @media (max-width: 768px) {
