@@ -756,11 +756,245 @@ body.dark-mode footer {
 /* Footer Css */
 
 footer {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(9, 5, 40, 0.9);
+    color: #ccc;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items:flex-start;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.company-info {
+    font-weight: 600;
+    text-align: justify;
+    margin:0  20px; 
+}
+
+.quick-links {
+    font-weight: 600; 
+}
+
+.company-info,
+.quick-links,.send-message{
+    flex-basis:27%;
+}
+.send-message{ 
+   padding-left: 15px;
+   padding: 0 40px;
+}
+
+.company-name {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.company-name img {
+    width: 50px;
+    vertical-align: middle;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.company-info p {
+    line-height: 1.8;
+    text-align:center;
+}
+
+.quick-links h2,
+.send-message h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.quick-links ul,
+.send-message form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li,
+.send-message button {
+    margin-bottom:1px;
+}
+
+.quick-links a,
+.send-message button {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.send-message input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.copyright {
+    font-weight: bold;
+    margin-top: 30px;
     text-align: center;
-    padding: 15px 20px;
-    background-color: #333333;
+    padding: 10px 0;
+    color: #ccc;
+}
+
+.heading {
+    font-size: 24px;
+
+    margin-bottom: 20px;
+    background: #00F260;
+    background: -webkit-linear-gradient(to right, #d3d8dd, #00F260);
+    background: linear-gradient(to right, #c9d4df, #4ea6e5);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.group1 {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.send-message input,
+.send-message textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing:border-box;
+    font-size: 15px;
+}
+
+.send-message textarea {
+    height: 45px;
+}
+
+.send-message button {
+    height: 50px;
+    background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+    background: linear-gradient(to right, #89b9e8, #5568e0);
     color: white;
-    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.heading {
+    text-align: center;
+}
+
+.footer-ul {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-ul li {
+    margin: 10px 15px;
+    position: relative;
+}
+
+.footer-ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+.footer-ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #e5cf29;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-ul li a:hover {
+    color: #adcbe1;
+}
+
+.footer-ul li a:hover::after {
+    width: 100%;
+}
+
+.social {
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin: 0 2rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: 1rem;
+   
+}
+
+.social a i {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Pop up effect */
+
+.social a:hover i {
+    transform: translateY(-8px);
+}
+
+.social a {
+    color: var(--secondary);
+}
+
+.social a.user:hover {
+    color: #7cddf5;
+}
+
+.social a.message:hover {
+    color: #7cddf5;
+}
+
+.social a.linkedin:hover {
+    color: #7cddf5;
+}
+
+.social a.github:hover {
+    color: #7cddf5;
+}
+
+.social a.instagram:hover {
+    color: #7cddf5;
+}
+
+.social a.facebook:hover {
+    color: #7cddf5;
+}
+
+.social a.twitter:hover {
+    color:#7cddf5;
+}
+
+.social a.discord:hover {
+    color: #7cddf5;
 }
 
 /* Media queries for responsiveness */
@@ -807,6 +1041,31 @@ footer {
 
     body.dark-mode .nav-links a {
         color: #2a2a2a;
+    }
+}
+
+@media (max-width: 925px) {
+    .social {
+        font-size: 2.5rem;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .footer-container {
+        margin: 2px 3px;
+    }
+
+    .company-info,
+    .quick-links,
+    .send-message {
+        margin-top: 8px;
+        text-align: center;
+        flex-basis: 100%;
     }
 }
 
