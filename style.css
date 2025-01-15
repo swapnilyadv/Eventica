@@ -621,7 +621,35 @@ body.dark-mode footer {
     border: none;
     cursor: pointer;
     padding: 1rem;
-    transform: scale(1.4);
+    z-index: 1000;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.mobile-menu-btn i {
+    font-size: 24px;
+    color: var(--text-color);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.mobile-menu-btn .fa-times {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobile-menu-btn.active .fa-bars {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobile-menu-btn.active .fa-times {
+    opacity: 1;
+    visibility: visible;
 }
 
 /* Testimonials Section Css */
@@ -1035,8 +1063,9 @@ footer {
         width: 100%;
         text-align: center;
         padding: 1rem 0;
-        border-bottom: 1px solid #eeeeee;
         margin-left: 0;
+        transition: all 0.3s ease;
+        border-bottom: 1px solid #eeeeee;
     }
 
     body.dark-mode .nav-links a {
