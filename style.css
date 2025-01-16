@@ -793,8 +793,8 @@ footer {
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
-    align-items:flex-start;
+    justify-content: space-between;
+    align-items: flex-start;
     margin: 0 auto;
     max-width: 1300px;
 }
@@ -802,20 +802,22 @@ footer {
 .company-info {
     font-weight: 600;
     text-align: justify;
-    margin:0  20px; 
+    margin: 0 20px;
 }
 
 .quick-links {
-    font-weight: 600; 
+    font-weight: 600;
 }
 
 .company-info,
-.quick-links,.send-message{
-    flex-basis:27%;
+.quick-links,
+.send-message {
+    flex-basis: 20%;
 }
-.send-message{ 
-   padding-left: 15px;
-   padding: 0 40px;
+
+.send-message {
+    padding-left: 15px;
+    padding: 0 40px;
 }
 
 .company-name {
@@ -832,7 +834,7 @@ footer {
 
 .company-info p {
     line-height: 1.8;
-    text-align:center;
+    text-align: center;
 }
 
 .quick-links h2,
@@ -850,7 +852,7 @@ footer {
 
 .quick-links li,
 .send-message button {
-    margin-bottom:1px;
+    margin-bottom: 1px;
 }
 
 .quick-links a,
@@ -901,7 +903,7 @@ footer {
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     font-size: 15px;
 }
 
@@ -974,9 +976,8 @@ footer {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     gap: 1rem;
-   
 }
 
 .social a i {
@@ -1018,7 +1019,7 @@ footer {
 }
 
 .social a.twitter:hover {
-    color:#7cddf5;
+    color: #7cddf5;
 }
 
 .social a.discord:hover {

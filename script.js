@@ -240,7 +240,7 @@ const navItems = document.querySelector('.nav-items');
 mobileMenuBtn.addEventListener('click', () => {
     mobileMenuBtn.classList.toggle('active');
     navItems.classList.toggle('active');
-    
+
     // Update accessibility attributes
     const isOpen = navItems.classList.contains('active');
     mobileMenuBtn.setAttribute('aria-expanded', isOpen);
