@@ -1168,6 +1168,17 @@ footer {
     }
 }
 
+@media (max-width: 380px) {
+    .event-grid {
+        display: block;
+        
+    }
+
+    .event-card {
+        margin: 10px 0;
+    }
+}
+
 @media print {
 
     .navbar,
