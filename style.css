@@ -784,10 +784,11 @@ body.dark-mode footer {
 /* Footer Css */
 
 footer {
-    font-family: 'Montserrat', sans-serif;
-    background-color: rgb(9, 5, 40, 0.9);
-    color: #ccc;
-    padding: 30px 0;
+    background-color: #090528;
+    color: #cccccc;
+    padding: 20px 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer-container {
@@ -797,39 +798,25 @@ footer {
     align-items: flex-start;
     margin: 0 auto;
     max-width: 1300px;
+    padding: 0 20px;
 }
 
 .company-info {
     font-weight: 600;
-    text-align: justify;
-    margin: 0 20px;
-}
-
-.quick-links {
-    font-weight: 600;
-}
-
-.company-info,
-.quick-links,
-.send-message {
-    flex-basis: 20%;
-}
-
-.send-message {
-    padding-left: 15px;
-    padding: 0 40px;
+    flex: 1 1 30%;
 }
 
 .company-name {
     font-size: 24px;
     margin-bottom: 10px;
+    align-items: center;
 }
 
 .company-name img {
-    width: 50px;
+    width: 36px;
+    width: 36px;
     vertical-align: middle;
     margin-top: -5px;
-    margin-right: 10px;
 }
 
 .company-info p {
@@ -837,54 +824,54 @@ footer {
     text-align: center;
 }
 
-.quick-links h2,
-.send-message h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.quick-links ul,
-.send-message form {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.quick-links li,
-.send-message button {
-    margin-bottom: 1px;
-}
-
-.quick-links a,
-.send-message button {
-    text-decoration: none;
-    color: #ccc;
-}
-
-.send-message input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.copyright {
-    font-weight: bold;
-    margin-top: 30px;
-    text-align: center;
-    padding: 10px 0;
-    color: #ccc;
+.quick-links {
+    flex: 1 1 30%;
 }
 
 .heading {
-    font-size: 24px;
-
+    font-size: 21px;
     margin-bottom: 20px;
-    background: #00F260;
-    background: -webkit-linear-gradient(to right, #d3d8dd, #00F260);
+    background: -webkit-linear-gradient(to right, #c9d4df, #4ea6e5);
     background: linear-gradient(to right, #c9d4df, #4ea6e5);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.footer-ul {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-ul li a {
+    text-decoration: none;
+    padding: 5px 0;
+    transition: color 0.3s ease-in-out;
+    color: #cccccc;
+    font-weight: 600;
+    position: relative;
+}
+
+.footer-ul li a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #e5cf29; /* Color of the underline */
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-ul li a:hover::after {
+    width: 100%; /* Fully expand the underline */
+}
+
+.send-message {
+    flex: 1 1 30%;
 }
 
 .form-group {
@@ -897,81 +884,45 @@ footer {
     gap: 10px;
 }
 
+.send-message input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
 .send-message input,
 .send-message textarea {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .send-message textarea {
-    height: 45px;
+    height: 50px;
+    color: black;
 }
 
 .send-message button {
     height: 50px;
-    background: -webkit-linear-gradient(to right, #0575E6, #00F260);
+    background: -webkit-linear-gradient(to right, #89b9e8, #5568e0);
     background: linear-gradient(to right, #89b9e8, #5568e0);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
 }
 
-.heading {
-    text-align: center;
-}
-
-.footer-ul {
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-}
-
-.footer-ul li {
-    margin: 10px 15px;
-    position: relative;
-}
-
-.footer-ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    padding: 5px 0;
-    transition: color 0.3s ease-in-out;
-    position: relative;
-}
-
-.footer-ul li a::after {
-    content: "";
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #e5cf29;
-    transition: width 0.3s ease-in-out;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.footer-ul li a:hover {
-    color: #adcbe1;
-}
-
-.footer-ul li a:hover::after {
-    width: 100%;
-}
-
 .social {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-decoration: none;
-    margin: 0 2rem;
+    margin: 0 1rem;
     transition: 0.3s ease-in-out;
     cursor: pointer;
     display: flex;
@@ -984,7 +935,30 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Pop up effect */
+.copyright {
+    color: #cccccc;
+    padding: 0 20px;
+    margin-top: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.quick-links ul,
+.send-message form {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links li,
+.send-message button {
+    margin-bottom: 10px;
+}
+
+.quick-links a,
+.send-message button {
+    text-decoration: none;
+}
 
 .social a:hover i {
     transform: translateY(-8px);
@@ -995,35 +969,35 @@ footer {
 }
 
 .social a.user:hover {
-    color: #7cddf5;
+    color: #4af3b5;
 }
 
 .social a.message:hover {
-    color: #7cddf5;
+    color: #d44638;
 }
 
 .social a.linkedin:hover {
-    color: #7cddf5;
+    color: #0a66c2;
 }
 
 .social a.github:hover {
-    color: #7cddf5;
+    color: #181717;
 }
 
 .social a.instagram:hover {
-    color: #7cddf5;
+    color: #e1306c;
 }
 
 .social a.facebook:hover {
-    color: #7cddf5;
+    color: #1877f2;
 }
 
 .social a.twitter:hover {
-    color: #7cddf5;
+    color: #1da1f2;
 }
 
 .social a.discord:hover {
-    color: #7cddf5;
+    color: #5865f2;
 }
 
 /* Media queries for responsiveness */
@@ -1115,6 +1089,62 @@ footer {
 
     .highlight-text {
         font-size: 11vw;
+    }
+
+    .footer-container {
+        margin: 2px 3px;
+    }
+
+    .company-info,
+    .quick-links,
+    .send-message {
+        margin-top: 8px;
+        text-align: center;
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .company-info {
+        flex: 1 1 100%; /* Make company info take full width */
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Split the quick-links into two columns */
+    .footer-ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .send-message {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .group1 {
+        flex-direction: column;
+    }
+
+    .group1 input {
+        margin-bottom: 5px;
+    }
+
+    .send-message input,
+    .send-message textarea {
+        width: 100%;
+        resize: vertical;
+    }
+
+    .social {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .social a {
+        font-size: 2.5rem;
     }
 }
 
