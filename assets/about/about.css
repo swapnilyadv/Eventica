@@ -14,6 +14,68 @@ body {
     background-color: var(--background-color);
 }
 
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+
+  .button-outline {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .button-outline:hover {
+    color: #6a11cb;
+    background: #fff;
+    transform: translateY(-2px);
+  }
+
+  .button-glow {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #ff5722;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff5722, 0 0 40px #ff5722, 0 0 80px #ff5722;
+    transition: all 0.3s ease;
+  }
+
+  .button-glow:hover {
+    box-shadow: 0 0 20px #ff8a50, 0 0 60px #ff8a50, 0 0 100px #ff8a50;
+    background: #e64a19;
+  }
+
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+  }
+
 /* Dark mode Css*/
 
 body.dark-mode .about-text {
